@@ -1,1 +1,5 @@
 _site
+*~
+*css.map
+*.sass-cache*
+
