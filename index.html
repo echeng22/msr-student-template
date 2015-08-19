@@ -6,15 +6,15 @@ title: Portfolio
 <main id="portfolio">
 	<h1 class="page-header">Portfolio</h1>
 	<section>
-		<ul id="portfolio-gallery">
+		<div id="portfolio-gallery">
 			{% for project in site.projects %}
-				<li>
+				<div class="container">
 					<a href="{{ site.baseurl }}{{ project.url }}">
-						<img src="{{ project.image }}">
-						<h2>{{ project.title }}</h2>
+						<img class="inner" src="{{ project.image }}">
+						<div class="inner-text"><h2>{{ project.title }}</h2></div>
 					</a>
-				</li>
+				</div>
 			{% endfor %}
-		</ul>
+		</div>
 	</section>
 </main>

@@ -72,52 +72,74 @@ html {
 		/* Portfolio page */
 		main#portfolio {
 
-			ul#portfolio-gallery {
+			div#portfolio-gallery {
 				margin: 0 auto;
 				width: 100%;
 				overflow: auto;
-				vertical-align: top;
-				
+				height: auto;
 
-				li {
-					margin-bottom: 20px;
-					width: calc((100% - 60px - 24px) / 4); // 20px*3 margin, 6px*4 border
-					max-height: 500px;
-					list-style: none;
-					list-style-type: none;
-					text-align: center;
-					border: 1px solid #bbb;
-					border-radius: 3px;
+				div.container {
+					width: calc((100% - 60px - 24px) / 4);
 					display: inline-block;
+					margin-bottom: 20px;
+					border: 2px solid #bbb;
+					text-align: center;
+					position: relative;
 
 					a {
 						color: inherit;
 						text-decoration: none;
-						
-						img {
+
+						img.inner {
 							width: 100%;
-							border-radius: 3px 3px 0 0;
+							/* border-radius: 3px 3px 0 0; */
 						}
-						h2 {
-							display: block;
-							padding: 15px;
-							font-size: 16px;
+
+						div.inner-text {
+							padding-top: 15px;
+							padding-bottom: 15px;
+							z-index: 100;
+							background: white;
+							overflow: hidden;
+							position: absolute;
+							bottom: 0px;
+							width: 100%;
+							max-height: 15%;
+
+							h2 {
+								font-size: 16px;
+							}
 						}
 					}
 				}
+				/* 2xN grid: */
 				@media screen and (max-width : 800px) {
-					li:not(:nth-child(2n)) {
+					div.container:not(:nth-child(2n)) {
 						margin-right: 20px;
 					}
-					li {
-						width: calc((100% - 40px - 12px) / 2); // 20px margin, 6px of border
+					div.container {
+						width: calc((100% - 40px - 10px) / 2);
 					}
+
 				}
-				li:not(:nth-child(4n)) {
+				/* 3xN grid: */
+				@media screen and (max-width : 1200px) and (min-width : 800px) {
+					div.container:not(:nth-child(3n)) {
+						margin-right: 20px;
+					}
+					div.container {
+						width: calc((100% - 60px - 18px) / 3); // 20px margin, 6px of border
+					}
+
+				}
+				/* 4xN grid: */
+				div.container:not(:nth-child(4n)) {
 					margin-right: 20px;
 				}
 			}
 		}
+
+		
 		/* About page */
 		main#about {
 
