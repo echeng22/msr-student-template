@@ -79,7 +79,7 @@ html {
 				height: auto;
 
 				div.container {
-					width: calc((100% - 60px - 24px) / 4);
+					width: calc((100% - 60px - 40px) / 4);
 					display: inline-block;
 					margin-bottom: 20px;
 					border: 2px solid #bbb;
@@ -118,17 +118,7 @@ html {
 						margin-right: 20px;
 					}
 					div.container {
-						width: calc((100% - 40px - 10px) / 2);
-					}
-
-				}
-				/* 3xN grid: */
-				@media screen and (max-width : 1200px) and (min-width : 800px) {
-					div.container:not(:nth-child(3n)) {
-						margin-right: 20px;
-					}
-					div.container {
-						width: calc((100% - 60px - 18px) / 3); // 20px margin, 6px of border
+						width: calc((100% - 40px - 40px) / 2);
 					}
 
 				}

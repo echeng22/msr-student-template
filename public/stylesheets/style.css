@@ -57,10 +57,9 @@ html {
       overflow: auto;
       height: auto;
       /* 2xN grid: */
-      /* 3xN grid: */
       /* 4xN grid: */ }
       html body main#portfolio div#portfolio-gallery div.container {
-        width: calc((100% - 60px - 24px) / 4);
+        width: calc((100% - 60px - 40px) / 4);
         display: inline-block;
         margin-bottom: 20px;
         border: 2px solid #bbb;
@@ -88,12 +87,7 @@ html {
         html body main#portfolio div#portfolio-gallery div.container:not(:nth-child(2n)) {
           margin-right: 20px; }
         html body main#portfolio div#portfolio-gallery div.container {
-          width: calc((100% - 40px - 10px) / 2); } }
-      @media screen and (max-width: 1200px) and (min-width: 800px) {
-        html body main#portfolio div#portfolio-gallery div.container:not(:nth-child(3n)) {
-          margin-right: 20px; }
-        html body main#portfolio div#portfolio-gallery div.container {
-          width: calc((100% - 60px - 18px) / 3); } }
+          width: calc((100% - 40px - 40px) / 2); } }
       html body main#portfolio div#portfolio-gallery div.container:not(:nth-child(4n)) {
         margin-right: 20px; }
     html body main#about section#about-content {
