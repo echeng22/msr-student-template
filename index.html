@@ -8,12 +8,20 @@ title: Portfolio
 	<section>
 		<div id="portfolio-gallery">
 			{% for project in site.projects %}
-				<div class="container">
+			<div class="container">
+				<div class="aspect-ratio-keeper"> </div>
+				<div class="content">
 					<a href="{{ site.baseurl }}{{ project.url }}">
-						<img class="inner" src="{{ project.image }}">
-						<div class="inner-text"><h2>{{ project.title }}</h2></div>
+						<span class="link-spanner"></span>
+						<div class="image-container">
+							<img class="inner" src="{{ project.image }}">
+						</div>
+						<div class="inner-text">
+							<h2>{{ project.title }}</h2>
+						</div>
 					</a>
 				</div>
+			</div>
 			{% endfor %}
 		</div>
 	</section>
