@@ -110,18 +110,25 @@ html {
 					}
 
 					div.image-container {
+						position: relative;
 						height: 85%;
 						overflow: hidden;
-						position: absolute;
-						vertical-align: middle;
-						top: 0;  bottom: 0;  left: 0;  right: 0;
-						display: flex;
-						justify-content: center;
-						align-items: center;
+						text-align: center;
+						-webkit-transform-style: preserve-3d;
+						-moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
 
-						img.inner {
-							width: 100%;
-							margin: auto;
+						div.image-vertical-align-box {
+							position: relative;
+							top: 50%;
+							-webkit-transform: translateY(-50%);
+							-ms-transform: translateY(-50%);
+							transform: translateY(-50%);
+							
+							img.inner {
+								width: 100%;
+								margin: auto;
+							}
 						}
 					}
 

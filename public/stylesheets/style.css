@@ -84,20 +84,22 @@ html {
           left: 0;
           z-index: 1; }
         html body main#portfolio div#portfolio-gallery div.container div.image-container {
+          position: relative;
           height: 85%;
           overflow: hidden;
-          position: absolute;
-          vertical-align: middle;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          html body main#portfolio div#portfolio-gallery div.container div.image-container img.inner {
-            width: 100%;
-            margin: auto; }
+          text-align: center;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+          html body main#portfolio div#portfolio-gallery div.container div.image-container div.image-vertical-align-box {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+            html body main#portfolio div#portfolio-gallery div.container div.image-container div.image-vertical-align-box img.inner {
+              width: 100%;
+              margin: auto; }
         html body main#portfolio div#portfolio-gallery div.container div.inner-text {
           padding-top: 15px;
           padding-bottom: 15px;
