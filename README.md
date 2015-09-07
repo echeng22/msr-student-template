@@ -28,7 +28,7 @@ the above command, you are likely to get errors when running commands in the
 variable when running `jekyll build --watch`, run the following commands to use
 `rvm` (Ruby Version Manager) to install a new version of `ruby` and `jekyll`:
 
-```
+```shell
 1 $  sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison \
       libffi-dev curl icedtea-7-jre-jamvm nodejs nodejs-dev
 2 $  curl -L https://get.rvm.io | bash -s stable
@@ -122,7 +122,7 @@ runs that engine, processing and reprocessing the "raw" files every time you mak
 Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML, set between triple-dashed lines (taken from Jekyll's documentation: http://jekyllrb.com/docs/frontmatter/). Here's a basic example that you'll find in the index.html file:
 ```
 ---
-layout: default
+layout: main
 title: Portfolio
 ---
 ```
@@ -193,3 +193,53 @@ image: http://unsplash.it/400?random
 ---
 ```
 Following that front matter, just add content in regular markdown.
+
+### Editing appearance
+
+The appearance of the site is defined entirely by the
+interaction of several key HTML files and CSS defined to go along with them. The
+following describes the importance of each of the HTML files:
+
+* [main.html](_layouts/main.html) provides the general structure of every page
+  on the site. It includes common elements that are on all of the pages
+  including content for the HTML `<head>` tag, and page footers/headers. These
+  common elements are all defined in the `_includes` directory.
+* The other three html files inside of the `_layouts` directory define the
+  appearance of the about page, the contact page, and each of the project
+  entries. The [index.html](index.html) page defines the project grid that is
+  shown on the site's base URL
+* Note that all of these HTML files are of the `main` layout. Thus each of these
+  pages has the same `<head>` tag, and footer/header.
+
+These HTML files are only half of the story; the other requirement for defining
+appearance is the CSS to go along with the HTML. The CSS for this site is
+generated using [SASS](http://sass-lang.com/). Quoting from the [SASS
+documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html):
+
+> Sass is an extension of CSS that adds power and elegance to the basic
+> language. It allows you to use variables, nested rules, mixins, inline imports,
+> and more, all with a fully CSS-compatible syntax. Sass helps keep large
+> stylesheets well-organized, and get small stylesheets up and running quickly,
+> particularly with the help of the Compass style library.
+
+Basically we use the syntactical convenience of SASS to enable easier generation
+of our CSS. What this means is that if we want to update our site's CSS, we
+need to edit the [public/stylesheets/style.scss](public/stylesheets/style.scss)
+file and use SASS to build the corresponding CSS. To build the CSS file, `cd` to
+the `<project_root>/public/stylesheets/` directory and then execute
+
+```bash
+sass --watch style.scss:style.css
+```
+
+As you edit the SCSS file, the CSS file will be automatically updated!
+
+To install SASS you can either use `apt-get` or `gem`:
+
+```bash
+sudo apt-get install ruby-sass
+```
+or
+```bash
+gem install sass
+```
