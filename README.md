@@ -50,7 +50,11 @@ variable when running `jekyll build --watch`, run the following commands to use
 ### Basic Usage (recommended)
 
 You'll first need a Jekyll site. If you are interested in using this template,
-you should clone this repo. In one terminal, build the jekyll site, watching for
+you should clone this repo. Then go into it with 
+```
+cd msr-student-template
+```
+In one terminal, build the jekyll site, watching for
 any changes (run in the site root directory)
 ```
 $  jekyll build --watch
@@ -243,3 +247,34 @@ or
 ```bash
 gem install sass
 ```
+
+### Changing pictures,titles and date.
+To change the pictures displayed on a project, you should first copy the pictures you want into 
+```
+msr-student-template/public/images
+```
+
+To change images in a project file the image field should have this format
+```
+/msr-student-template/public/images/picture.[extension]
+```
+You can also change the project title and date. Below is an example.
+```
+---
+layout: project
+title: Agamenon Contingency
+date: May 27, 1939
+image: /msr-student-template/public/images/tower_of_babel.jpg
+
+---
+```
+### Arranging Projects
+Your projects will be arranged in alphabetical order depending on the name you give your **_.md_** file. To have full ontrol of the order your projects appear from left to right, you can simply prepend a number to the file name like this 
+* **_0_invisibility_project.md_** 
+* **_1_aliens_project.md_**. 
+* **_2_spartan_project.md_**
+
+This way the invisibility project is displayed before the aliens project and so on.
+
+### Side-by-Side Editor
+[Dillinger](http://dillinger.io/) is an online markdown editor that allows you view the output of markdown files side by side.
