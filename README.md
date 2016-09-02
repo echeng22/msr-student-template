@@ -5,7 +5,13 @@
 ## Jekyll Overview
 
 ### Built with Jekyll
-Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project's page, blog, or website from GitHub's servers for free (taken from Jekyll's website: http://jekyllrb.com/docs/home/).
+Jekyll is a simple, blog-aware, static site generator. It takes a template
+directory containing raw text files in various formats, runs it through Markdown
+and Liquid converters, and spits out a complete, ready-to-publish static website
+suitable for serving with your favorite web server. Jekyll also happens to be
+the engine behind GitHub Pages, which means you can use Jekyll to host your
+project's page, blog, or website from GitHub's servers for free (taken from
+Jekyll's website: http://jekyllrb.com/docs/home/).
 
 ### Get your workstation set up
 To test your website locally, you will need the following packages:
@@ -50,7 +56,7 @@ variable when running `jekyll build --watch`, run the following commands to use
 ### Basic Usage (recommended)
 
 You'll first need a Jekyll site. If you are interested in using this template,
-you should clone this repo. Then go into it with 
+you should clone this repo. Then go into it with
 ```
 cd msr-student-template
 ```
@@ -116,22 +122,39 @@ localhost:4000/msr-student-template/
 ## More on how Jekyll works
 
 ### The Jekyll Engine
-First, if you look inside the \_site directory, you'll see that no directories or files there begin with an underscore (\_). The contents of that directory are the end result of Jekyll's processing engine. All of the files and directories in the root directory of the repository that do begin with an underscore, on the other hand, are "raw". They either include markup that will be included within pages of the final site or they contain markdown and "Front Matter" (which I'll explain later) that will be converted into markup by Jekyll's engine. One of the two commands that you need to run in order to host the site on a local server:
+First, if you look inside the \_site directory, you'll see that no directories
+or files there begin with an underscore (\_). The contents of that directory are
+the end result of Jekyll's processing engine. All of the files and directories
+in the root directory of the repository that do begin with an underscore, on the
+other hand, are "raw". They either include markup that will be included within
+pages of the final site or they contain markdown and "Front Matter" (which I'll
+explain later) that will be converted into markup by Jekyll's engine. One of the
+two commands that you need to run in order to host the site on a local server:
 ```
 jekyll build --watch
-``` 
-runs that engine, processing and reprocessing the "raw" files every time you make a change to a file. The files and directories in the root directory of the repository that _don't_ begin with an underscore are ignored by Jekyll and will remain the exact same in the _site directory.
+```
+runs that engine, processing and reprocessing the "raw" files every time you
+make a change to a file. The files and directories in the root directory of the
+repository that _don't_ begin with an underscore are ignored by Jekyll and will
+remain the exact same in the _site directory.
 
 ### Front Matter
-Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML, set between triple-dashed lines (taken from Jekyll's documentation: http://jekyllrb.com/docs/frontmatter/). Here's a basic example that you'll find in the index.html file:
+Any file that contains a YAML front matter block will be processed by Jekyll as
+a special file. The front matter must be the first thing in the file and must
+take the form of valid YAML, set between triple-dashed lines (taken from
+Jekyll's documentation: http://jekyllrb.com/docs/frontmatter/). Here's a basic
+example that you'll find in the index.html file:
 ```
 ---
 layout: main
 title: Portfolio
 ---
 ```
-This first item tells Jekyll to take all of the markup in index.html and plug it into the _layouts/main.html template to take the place of the {{ content }} variable found in that template file.
-The second item tells Jekyll to create a variable, page.title, that you can use in the markup of the template. For example, in _layouts/main.html, you could write:
+This first item tells Jekyll to take all of the markup in index.html and plug it
+into the _layouts/main.html template to take the place of the {{ content }}
+variable found in that template file. The second item tells Jekyll to create a
+variable, page.title, that you can use in the markup of the template. For
+example, in _layouts/main.html, you could write:
 ```
 <head>
 	<title>{{ page.title }}</title>
@@ -145,14 +168,20 @@ and that would render as:
 ```
 
 ### Collections
-Collections allow you to define a new type of document that can be somewhat conceptualized as an object type, each having its own unique properties and namespaces. These collections are declared in the _config.yml file:
+Collections allow you to define a new type of document that can be somewhat
+conceptualized as an object type, each having its own unique properties and
+namespaces. These collections are declared in the _config.yml file:
 ```
 collections:
   projects:
     output: true
     permalink: /projects/:path/
 ```
-For this site, we only use one collections: projects, the contents of which can be found in the _projects directory. Notice that this directory name begins with an underscore. This is because each file in it only contains some combination of markdown and front-matter and will be processed by Jekyll's engine. Let's look at projects/2014-09-22-project-1.md as an example:
+For this site, we only use one collections: projects, the contents of which can
+be found in the _projects directory. Notice that this directory name begins with
+an underscore. This is because each file in it only contains some combination of
+markdown and front-matter and will be processed by Jekyll's engine. Let's look
+at projects/2014-09-22-project-1.md as an example:
 ```
 ---
 layout: project
@@ -162,12 +191,21 @@ image: http://unsplash.it/400?random
 ---
 
 ## Overview
-Lorem ipsum dolor sit amet, tota primis copiosae id quo. Melius eligendi elaboraret pri et, eam menandri platonem te. Tollit iudicabit gloriatur per ad. Ad diceret recteque eum, eu commodo petentium qui. No aliquid delectus eam, dicta eripuit convenire te nec. Vix no veritus dignissim. Erat ferri veniam ut eos, pro ex eius error intellegat, his te graecis oporteat honestatis.
+Lorem ipsum dolor sit amet, tota primis copiosae id quo. Melius eligendi
+elaboraret pri et, eam menandri platonem te. Tollit iudicabit gloriatur per ad.
+Ad diceret recteque eum, eu commodo petentium qui. No aliquid delectus eam,
+dicta eripuit convenire te nec. Vix no veritus dignissim. Erat ferri veniam ut
+eos, pro ex eius error intellegat, his te graecis oporteat honestatis.
 
 ### Topic 1
-His nemore audiam consequat ad, no augue choro assueverit mei. Zril offendit tincidunt ne quo. At commodo integre alienum sea, cu vocent fuisset suscipit nam. Eum ex tation omnesque adversarium, mutat autem putant te nam. Id vix facilis complectitur, vis vitae vivendo euripidis ea, fugit eirmod an vix...
+His nemore audiam consequat ad, no augue choro assueverit mei. Zril offendit
+tincidunt ne quo. At commodo integre alienum sea, cu vocent fuisset suscipit
+nam. Eum ex tation omnesque adversarium, mutat autem putant te nam. Id vix
+facilis complectitur, vis vitae vivendo euripidis ea, fugit eirmod an vix...
 ```
-This file represents a project in the projects collection and contains both YAML front matter and Markdown. You can see how powerful collections are if we take a look at a snippet of index.html:
+This file represents a project in the projects collection and contains both YAML
+front matter and Markdown. You can see how powerful collections are if we take a
+look at a snippet of index.html:
 ```
 <ul id="portfolio-gallery">
     {% for project in site.projects %}
@@ -180,14 +218,23 @@ This file represents a project in the projects collection and contains both YAML
     {% endfor %}
 </ul>
 ```
-The ```{% %}``` tags represent liquid syntax and their contents are processed by Jekyll to render static HTML in the final site. You can see that all of the projects in the projects collection can be referenced with ```site.projects``` and iterated through with a for loop. In this specific for loop, for each project in the projects collection, we pull its image and title using ```{{ }}``` tags. All of a particular project's information is defined in its markdown file just like the one which we saw above. You can find more useful information about collections in Jekyll's website (http://jekyllrb.com/docs/collections/).
+The ```{% %}``` tags represent liquid syntax and their contents are processed by
+Jekyll to render static HTML in the final site. You can see that all of the
+projects in the projects collection can be referenced with ```site.projects```
+and iterated through with a for loop. In this specific for loop, for each
+project in the projects collection, we pull its image and title using ```{{
+}}``` tags. All of a particular project's information is defined in its markdown
+file just like the one which we saw above. You can find more useful information
+about collections in Jekyll's website (http://jekyllrb.com/docs/collections/).
 
 
 
 ## Maintaining the Site
 
 ### Adding Projects
-To add a project, just create a .md file in the _projects directory with front matter at the beginning that follows this format (taken from 2014-09-22-project-1.md):
+To add a project, just create a .md file in the _projects directory with front
+matter at the beginning that follows this format (taken from
+2014-09-22-project-1.md):
 ```
 ---
 layout: project
@@ -249,7 +296,8 @@ gem install sass
 ```
 
 ### Changing pictures,titles and date.
-To change the pictures displayed on a project, you should first copy the pictures you want into 
+To change the pictures displayed on a project, you should first copy the
+pictures you want into
 ```
 msr-student-template/public/images
 ```
@@ -269,12 +317,15 @@ image: /msr-student-template/public/images/tower_of_babel.jpg
 ---
 ```
 ### Arranging Projects
-Your projects will be arranged in alphabetical order depending on the name you give your **_.md_** file. To have full ontrol of the order your projects appear from left to right, you can simply prepend a number to the file name like this 
-* **_0_invisibility_project.md_** 
-* **_1_aliens_project.md_**. 
+Your projects will be arranged in alphabetical order depending on the name you
+give your **_.md_** file. To have full control of the order your projects appear
+from left to right, you can simply prepend a number to the file name like this
+* **_0_invisibility_project.md_**
+* **_1_aliens_project.md_**.
 * **_2_spartan_project.md_**
 
 This way the invisibility project is displayed before the aliens project and so on.
 
 ### Side-by-Side Editor
-[Dillinger](http://dillinger.io/) is an online markdown editor that allows you view the output of markdown files side by side.
+[Dillinger](http://dillinger.io/) is an online markdown
+editor that allows you view the output of markdown files side by side.
