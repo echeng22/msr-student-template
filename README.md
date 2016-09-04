@@ -349,6 +349,25 @@ default URL which would be
 http://nu-msr.github.io/msr-student-template/00-2014-09-24-project-3 ).
 
 
-### Side-by-side editor
-[Dillinger](http://dillinger.io/) is an online markdown
-editor that allows you view the output of markdown files side by side.
+## Helpful tools
+
+[Dillinger](http://dillinger.io/) is an online markdown editor that allows you
+view the output of markdown files side by side.
+
+[Markdown Preview Plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl)
+is a Google Chrome extension that allows real-time previewing of locally edited
+Markdown files.
+[Markdown Here](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)
+is a Firefox extension with similar functionality.
+
+[Pandoc](http://pandoc.org/) is an awesome tool that allows you to convert
+between various markup formats (Markdown, Org, LaTeX, etc.) and various document
+formats (html, doc, pdf, etc.). It can be a little tricky to get it to do
+exactly what you want, but it is extremely powerful.
+
+Many text editors have plugins that enable Markdown previewing. For example, if
+you use Sublime, check out
+[Sublime Text Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview)
+plugin.
+
+
