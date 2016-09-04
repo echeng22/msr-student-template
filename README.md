@@ -297,6 +297,30 @@ gem install sass
 
 ### Changing site metadata
 
+There are several things that you may want to change that is unrelated to adding
+content. Some of these items are described below.
+
+* __Site Base URL__ You can use the functionality from GitHub Pages to change
+  your portfolio's base URL. See
+  [their documentation](https://help.github.com/articles/user-organization-and-project-pages/).
+  Note that if you change the name of your repository on GitHub the URL will
+  changes (as described in their docs), you'll want to also update the `baseurl`
+  field in the [_config.yml](_config.yml) file to correspond to this new name.
+* __Site Title__ The site title is in the header of every HTML page after Jekyll
+  builds your site. The default value is `Portfolio Template`. You'll want to
+  customize this in the [_config.yml](_config.yml) file as it shows up as the
+  tab title in most browsers.
+* __Favicon__ The site is set to add a
+  [favicon](https://en.wikipedia.org/wiki/Favicon) to each page. If you'd like
+  to customize this, either replace the
+  [public/images/msr-student-template-favicon.png](public/images/msr-student-template-favicon.png)
+  with your own file. Or, edit the [favicon line](_includes/head.html#L10) to
+  point to a different image.
+* __Title on Top Banner__ By default the top strip contains the words _My
+  Portfolio_ that link the site's homepage. If you'd like to customize this
+  text, edit [this line](_includes/header.html#L3) in the
+  [_includes/header.html](_includes/header.html) file.
+
 
 ### Changing pictures
 
@@ -377,6 +401,26 @@ commit to the following files, you should be all set:
 4. [index.html](index.html)
 
 ### Math in project posts
+
+The [_includes/head.html](_includes/head.html) contains the following snippet:
+
+```html
+	<script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+```
+
+This snippet tells every page that you can use
+[MathJax](http://docs.mathjax.org/en/latest/start.html) to render mathematics.
+According the the MathJax site "MathJax is an open-source JavaScript display
+engine for LaTeX, MathML, and AsciiMath notation that works in all modern
+browsers." Basically this means you can type math equations, usually using
+[LaTeX](https://www.latex-project.org/) syntax, then when your page loads, the
+equations will be sent to the MathJax servers. These servers will process the
+equations and send your site back properly formatted equations to display. Check
+out the [Project 3 source](_projects/00-2014-09-24-project-3.md) and the
+[rendered content](http://nu-msr.github.io/msr-student-template/project-3.html)
+for an example.
 
 
 ### Arranging projects
