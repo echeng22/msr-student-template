@@ -295,7 +295,20 @@ or
 gem install sass
 ```
 
-### Changing pictures, titles and dates
+### Changing site metadata
+
+
+### Changing pictures
+
+The default template has random internet pictures. You will, of course, be
+adding your own pictures. There are many ways to do this, but below we will
+present two possible ways. The easy way (described first) requires no editing of
+the site configuration, but it is less maintainable in the long term. The hard
+way is slightly more complicated, but it gives you a bit more control and helps
+you understand how Jekyll works (the complex method is recommended).
+
+
+#### Changing pictures: the easy way
 To change the pictures displayed on a project, you should first copy the
 pictures you want into
 ```
@@ -306,7 +319,7 @@ To change images in a project file the image field should have this format
 ```
 /msr-student-template/public/images/picture.[extension]
 ```
-You can also change the project title and date. Below is an example.
+For example, here is the front matter for a project with a custom image.
 ```
 ---
 layout: project
@@ -315,6 +328,22 @@ date: May 27, 1939
 image: /msr-student-template/public/images/tower_of_babel.jpg
 ---
 ```
+
+Note that the name of your repo on GitHub will define the exact path that you
+use to an image. If you change the name of your repo to be `portfolio`, then the
+image in the above example would be
+`/portfolio/public/images/tower_of_babel.jpg`. This is an example of why the
+"easy" way is less extensible/maintainable. If you wanted to rename your repo,
+all projects would need to be edited.
+
+#### Changing pictures: the complex way
+
+This method works by editing the code in the template HTML files that Jekyll
+uses when building the site.
+
+### Math in project posts
+
+
 ### Arranging projects
 Your projects will be arranged in alphabetical order depending on the name you
 give your **_.md_** file. To have full control of the order your projects appear
