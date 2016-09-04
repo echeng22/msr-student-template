@@ -2,7 +2,7 @@
 
 
 
-## Jekyll Overview
+## Jekyll overview
 
 ### Built with Jekyll
 Jekyll is a simple, blog-aware, static site generator. It takes a template
@@ -53,7 +53,7 @@ variable when running `jekyll build --watch`, run the following commands to use
 * line 7 updates `gem`
 * line 8 installs the latest `jekyll`
 
-### Basic Usage (recommended)
+### Local previewing
 
 You'll first need a Jekyll site. If you are interested in using this template,
 you should clone this repo. Then go into it with
@@ -121,7 +121,7 @@ localhost:4000/msr-student-template/
 
 ## More on how Jekyll works
 
-### The Jekyll Engine
+### The Jekyll engine
 First, if you look inside the \_site directory, you'll see that no directories
 or files there begin with an underscore (\_). The contents of that directory are
 the end result of Jekyll's processing engine. All of the files and directories
@@ -138,7 +138,7 @@ make a change to a file. The files and directories in the root directory of the
 repository that _don't_ begin with an underscore are ignored by Jekyll and will
 remain the exact same in the _site directory.
 
-### Front Matter
+### Front matter
 Any file that contains a YAML front matter block will be processed by Jekyll as
 a special file. The front matter must be the first thing in the file and must
 take the form of valid YAML, set between triple-dashed lines (taken from
@@ -229,9 +229,9 @@ about collections in Jekyll's website (http://jekyllrb.com/docs/collections/).
 
 
 
-## Maintaining the Site
+## Maintaining the site
 
-### Adding Projects
+### Adding projects
 To add a project, just create a .md file in the _projects directory with front
 matter at the beginning that follows this format (taken from
 2014-09-22-project-1.md):
@@ -295,7 +295,7 @@ or
 gem install sass
 ```
 
-### Changing pictures,titles and date.
+### Changing pictures, titles and dates
 To change the pictures displayed on a project, you should first copy the
 pictures you want into
 ```
@@ -313,10 +313,9 @@ layout: project
 title: Agamenon Contingency
 date: May 27, 1939
 image: /msr-student-template/public/images/tower_of_babel.jpg
-
 ---
 ```
-### Arranging Projects
+### Arranging projects
 Your projects will be arranged in alphabetical order depending on the name you
 give your **_.md_** file. To have full control of the order your projects appear
 from left to right, you can simply prepend a number to the file name like this
@@ -324,8 +323,32 @@ from left to right, you can simply prepend a number to the file name like this
 * **_1_aliens_project.md_**.
 * **_2_spartan_project.md_**
 
-This way the invisibility project is displayed before the aliens project and so on.
+This way the invisibility project is displayed before the aliens project and so
+on. To see why this works check out
+[lines 10-11 in the index.html file](index.html#L10-L11) or see the commit where
+this
+[change was introduced](https://github.com/NU-MSR/msr-student-template/commit/2b94e3d30f8da66d6bf0ea4a522a601dc253e8a7).
 
-### Side-by-Side Editor
+#### Permalinks and project names
+
+In the above section we showed that you can re-arrange your projects on the
+homepage by adjusting the filenames of the Markdown files. This is great, but an
+unintended consequence has to do with the URLs that Jekyll produces when
+converting Markdown files to HTML. In our default configuration, the name of the
+file becomes the URL. So if you start changing filenames just to re-order your
+homepage, your URLs will start changing as well. If you'd like to fix this
+issue, you can use the `permalink` attribute in your project front matter. For
+example, right now, _Project 3_ has a filename of
+```00-2014-09-24-project-3.md```. The zeros at the front are why it shows up
+first in the [main page](http://nu-msr.github.io/msr-student-template/) of the
+actual site. Notice however, that we've
+[set the permalink](https://github.com/NU-MSR/msr-student-template/commit/2b94e3d30f8da66d6bf0ea4a522a601dc253e8a7#diff-c5c82181ca4919fb080fbdf1fc649892R6)
+to be ```project-3.html```. Thus, we can find this project at the following URL:
+http://nu-msr.github.io/msr-student-template/project-3.html (instead of the
+default URL which would be
+http://nu-msr.github.io/msr-student-template/00-2014-09-24-project-3 ).
+
+
+### Side-by-side editor
 [Dillinger](http://dillinger.io/) is an online markdown
 editor that allows you view the output of markdown files side by side.
