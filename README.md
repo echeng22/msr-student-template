@@ -312,7 +312,7 @@ you understand how Jekyll works (the complex method is recommended).
 To change the pictures displayed on a project, you should first copy the
 pictures you want into
 ```
-msr-student-template/public/images
+public/images/
 ```
 
 To change images in a project file the image field should have this format
@@ -339,7 +339,42 @@ all projects would need to be edited.
 #### Changing pictures: the complex way
 
 This method works by editing the code in the template HTML files that Jekyll
-uses when building the site.
+uses when building the site. In all of the template HTML files we will add the
+path to where we store our images. Then in the `image` field of any Markdown
+file's front matter, we will just put the filename. So for example, let's say we
+want to change the how images are going to work for the project pages. We would
+go in and edit the HTML that inserts images to read
+``` html
+		<img id="project-image" src="{{ site.baseurl }}/public/images/{{ page.image }}">
+```
+instead of
+``` html
+		<img id="project-image" src="{{ page.image }}">
+```
+
+We would then put the image we want into the `public/images/` directory. Then on
+a project Markdown file's front matter, we would just put the image filename
+with no path. For example,
+```
+---
+layout: project
+title: Agamenon Contingency
+date: May 27, 1939
+image: tower_of_babel.jpg
+---
+```
+
+To see all of the required changes for custom images, check out
+[this commit](https://github.com/NU-MSR/msr-student-template/commit/7f40890361af2929ed297950c9ed7752aea339cb)
+from the
+[custom_images](https://github.com/NU-MSR/msr-student-template/tree/custom_images)
+branch of this repository. If you implement all of the changes shown in this
+commit to the following files, you should be all set:
+
+1. [_layouts/about.html](_layouts/about.html)
+2. [_layouts/contact.html](_layouts/contact.html)
+3. [_layouts/project.html](_layouts/project.html)
+4. [index.html](index.html)
 
 ### Math in project posts
 
