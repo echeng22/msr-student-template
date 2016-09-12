@@ -255,13 +255,13 @@ The appearance of the site is defined entirely by the
 interaction of several key HTML files and CSS defined to go along with them. The
 following describes the importance of each of the HTML files:
 
-* [_layouts/main.html](_layouts/main.html) provides the general structure of every page
+* [_layouts/main.html](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_layouts/main.html) provides the general structure of every page
   on the site. It includes common elements that are on all of the pages
   including content for the HTML `<head>` tag, and page footers/headers. These
   common elements are all defined in the `_includes` directory.
 * The other three html files inside of the `_layouts` directory define the
   appearance of the about page, the contact page, and each of the project
-  entries. The [index.html](index.html) page defines the project grid that is
+  entries. The [index.html](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/index.html) page defines the project grid that is
   shown on the site's base URL
 * Note that all of these HTML files are of the `main` layout. Thus each of these
   pages has the same `<head>` tag, and footer/header.
@@ -309,21 +309,21 @@ content. Some of these items are described below.
   [their documentation](https://help.github.com/articles/user-organization-and-project-pages/).
   Note that if you change the name of your repository on GitHub the URL will
   changes (as described in their docs), you'll want to also update the `baseurl`
-  field in the [_config.yml](./_config.yml) file to correspond to this new name.
+  field in the [_config.yml](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_config.yml) file to correspond to this new name.
 * __Site Title__ The site title is in the header of every HTML page after Jekyll
   builds your site. The default value is `Portfolio Template`. You'll want to
-  customize this in the [_config.yml](./_config.yml) file as it shows up as the
+  customize this in the [_config.yml](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_config.yml) file as it shows up as the
   tab title in most browsers.
 * __Favicon__ The site is set to add a
   [favicon](https://en.wikipedia.org/wiki/Favicon) to each page. If you'd like
   to customize this, either replace the
-  [public/images/msr-student-template-favicon.png](./public/images/msr-student-template-favicon.png)
-  with your own file. Or, edit the [favicon line](./_includes/head.html#L10) to
+  [public/images/msr-student-template-favicon.png](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/public/images/msr-student-template-favicon.png)
+  with your own file. Or, edit the [favicon line](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_includes/head.html#L10) to
   point to a different image.
 * __Title on Top Banner__ By default the top strip contains the words _My
   Portfolio_ that link the site's homepage. If you'd like to customize this
-  text, edit [this line](./_includes/header.html#L3) in the
-  [_includes/header.html](./_includes/header.html) file.
+  text, edit [this line](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_includes/header.html#L3) in the
+  [_includes/header.html](https://github.com/NU-MSR/msr-student-template/blob/gh-pages/_includes/header.html) file.
 
 
 ### Changing pictures
