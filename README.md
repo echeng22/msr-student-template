@@ -255,13 +255,13 @@ The appearance of the site is defined entirely by the
 interaction of several key HTML files and CSS defined to go along with them. The
 following describes the importance of each of the HTML files:
 
-* [_layouts/main.html](_layouts/main.html) provides the general structure of every page
+* [_layouts/main.html](./_layouts/main.html) provides the general structure of every page
   on the site. It includes common elements that are on all of the pages
   including content for the HTML `<head>` tag, and page footers/headers. These
   common elements are all defined in the `_includes` directory.
 * The other three html files inside of the `_layouts` directory define the
   appearance of the about page, the contact page, and each of the project
-  entries. The [index.html](index.html) page defines the project grid that is
+  entries. The [index.html](./index.html) page defines the project grid that is
   shown on the site's base URL
 * Note that all of these HTML files are of the `main` layout. Thus each of these
   pages has the same `<head>` tag, and footer/header.
