@@ -255,7 +255,7 @@ The appearance of the site is defined entirely by the
 interaction of several key HTML files and CSS defined to go along with them. The
 following describes the importance of each of the HTML files:
 
-* [main.html](_layouts/main.html) provides the general structure of every page
+* [_layouts/main.html](_layouts/main.html) provides the general structure of every page
   on the site. It includes common elements that are on all of the pages
   including content for the HTML `<head>` tag, and page footers/headers. These
   common elements are all defined in the `_includes` directory.
@@ -397,12 +397,13 @@ To see all of the required changes for custom images, check out
 from the
 [custom_images](https://github.com/NU-MSR/msr-student-template/tree/custom_images)
 branch of this repository. If you implement all of the changes shown in this
-commit to the following files, you should be all set:
+commit you should be all set. After editing, the files below should look like
+they do in the following links:
 
-1. [_layouts/about.html](_layouts/about.html)
-2. [_layouts/contact.html](_layouts/contact.html)
-3. [_layouts/project.html](_layouts/project.html)
-4. [index.html](index.html)
+1. [_layouts/about.html](https://github.com/NU-MSR/msr-student-template/blob/custom_images/_layouts/about.html)
+2. [_layouts/contact.html](https://github.com/NU-MSR/msr-student-template/blob/custom_images/_layouts/contact.html)
+3. [_layouts/project.html](https://github.com/NU-MSR/msr-student-template/blob/custom_images/_layouts/project.html)
+4. [index.html](https://github.com/NU-MSR/msr-student-template/blob/custom_images/index.html)
 
 ### Math in project posts
 
