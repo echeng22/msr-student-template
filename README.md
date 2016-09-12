@@ -37,35 +37,37 @@ variable when running `jekyll build --watch`, run the following commands to use
 ```shell
 1 $  sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison \
       libffi-dev curl icedtea-7-jre-jamvm nodejs nodejs-dev
-2 $  curl -L https://get.rvm.io | bash -s stable
-3 $  source ~/.rvm/scripts/rvm
-4 $  echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
-5 $  rvm install ruby --latest
-6 $  echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-7 $  gem update --system
-8 $  gem install jekyll
+2 $  curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+3 $  curl -L https://get.rvm.io | bash -s stable
+4 $  source ~/.rvm/scripts/rvm
+5 $  echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
+6 $  rvm install ruby --latest
+7 $  echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+8 $  gem update --system
+9 $  gem install jekyll
 ```
 * line 1 installs dependencies for `rvm`
-* lines 2-4 configure your environment to use `ruby` versions installed from
+* lines 2-5 configure your environment to use `ruby` versions installed from
 `rvm` instead of from `apt-get`
-* line 5 updates `rvm` itself
-* line 6 sets `gem` to not install documentation locally (this is optional)
-* line 7 updates `gem`
-* line 8 installs the latest `jekyll`
+* line 6 updates `rvm` itself
+* line 7 sets `gem` to not install documentation locally (this is optional)
+* line 8 updates `gem`
+* line 9 installs the latest `jekyll`
 
 ### Local previewing
 
 You'll first need a Jekyll site. If you are interested in using this template,
-you should clone this repo. Then go into it with
+you should clone this repo (or create a Fork of this repo and clone that copy).
+Then change directories into the root of the Jekyll site. For example,
 ```
 cd msr-student-template
 ```
-In one terminal, build the jekyll site, watching for
-any changes (run in the site root directory)
+In one terminal, build the Jekyll site, watching for
+any changes (must be run in the site root directory)
 ```
 $  jekyll build --watch
 ```
-In another terminal, start a local server (run in site root directory)
+In another terminal, start a local server (must be run in site root directory)
 ```
 $  jekyll serve
 ```
@@ -143,18 +145,18 @@ Any file that contains a YAML front matter block will be processed by Jekyll as
 a special file. The front matter must be the first thing in the file and must
 take the form of valid YAML, set between triple-dashed lines (taken from
 Jekyll's documentation: http://jekyllrb.com/docs/frontmatter/). Here's a basic
-example that you'll find in the index.html file:
+example that you'll find in the [index.html](index.html) file:
 ```
 ---
 layout: main
 title: Portfolio
 ---
 ```
-This first item tells Jekyll to take all of the markup in index.html and plug it
-into the _layouts/main.html template to take the place of the {{ content }}
-variable found in that template file. The second item tells Jekyll to create a
-variable, page.title, that you can use in the markup of the template. For
-example, in _layouts/main.html, you could write:
+This first item tells Jekyll to take all of the markup in the file and plug it
+into the [_layouts/main.html](_layouts/main.html) template to take the place of
+the ```{{ content }}``` variable found in that template file. The second item
+tells Jekyll to create a variable, ```page.title```, that you can use in the
+markup of the template. For example, in _layouts/main.html, you could write:
 ```
 <head>
 	<title>{{ page.title }}</title>
@@ -166,11 +168,13 @@ and that would render as:
 	<title>Portfolio</title>
 </head>
 ```
+in the html file that is output by Jekyll.
 
 ### Collections
 Collections allow you to define a new type of document that can be somewhat
 conceptualized as an object type, each having its own unique properties and
-namespaces. These collections are declared in the _config.yml file:
+namespaces. These collections are declared in the [_config.yml](_config.yml)
+file:
 ```
 collections:
   projects:
