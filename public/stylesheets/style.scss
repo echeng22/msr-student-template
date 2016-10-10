@@ -13,14 +13,14 @@ label, table, caption, {
 
 html {
 	width: 100%;
-	font-family: $font-stack; 
+	font-family: $font-stack;
 
 	body {
 
 		/* Header */
 		header {
 			width: 100%;
-			background-color: #222;
+			background-color: #4e008e;
 			color: #fff;
 
 			nav {
@@ -124,7 +124,7 @@ html {
 							-webkit-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-							
+
 							img.inner {
 								width: 100%;
 								margin: auto;
@@ -171,7 +171,7 @@ html {
 			}
 		}
 
-		
+
 		/* About page */
 		main#about {
 
@@ -212,7 +212,7 @@ html {
 				h3, p, ul, form, ol { margin: 1.12em 0 }
 				h5 { margin: 1.5em 0 }
 				h6 { margin: 1.67em 0 }
-				ol, ul { margin-left: 40px; }	
+				ol, ul { margin-left: 40px; }
 			}
 		}
 		/* Project page template */
@@ -242,14 +242,14 @@ html {
 				h3, p, ul, form, ol { margin: 1.12em 0 }
 				h5 { margin: 1.5em 0 }
 				h6 { margin: 1.67em 0 }
-				ol, ul { margin-left: 40px; }	
+				ol, ul { margin-left: 40px; }
 			}
 		}
 		/* Footer */
 		footer {
 			margin-top: 40px;
 			width: 100%;
-			background-color: #222;
+			background-color: #4e008e;
 			color: #fff;
 
 			ul {
@@ -269,12 +269,12 @@ html {
 						width: 100%;
 						float: none;
 						text-align: left;
-						
+
 					}
 				}
 			}
 
-			
+
 		}
 	}
 }
