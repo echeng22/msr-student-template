@@ -168,33 +168,35 @@ html {
         margin: 1.67em 0; }
       html body main#contact section#contact-content ol, html body main#contact section#contact-content ul {
         margin-left: 40px; }
-    html body main.project section#contact-content {
+    html body main.project section#project-content {
       margin-top: 20px;
       overflow: auto; }
-      html body main.project section#contact-content img#project-image {
+      html body main.project section#project-content img#project-image {
         float: right;
+        margin-top: 25px;
         margin-bottom: 25px;
         margin-left: 25px;
-        width: 280px; }
-      html body main.project section#contact-content h1#project-title {
+        height: 280px;
+        width: auto; }
+      html body main.project section#project-content h1#project-title {
         margin: 0; }
-      html body main.project section#contact-content h2#project-date {
+      html body main.project section#project-content h2#project-date {
         margin-top: 5px;
         font-size: 16px; }
-      html body main.project section#contact-content h1 {
+      html body main.project section#project-content h1 {
         margin: 0.67em 0;
         font-size: 2em; }
-      html body main.project section#contact-content h2 {
+      html body main.project section#project-content h2 {
         margin: 0.75em 0; }
-      html body main.project section#contact-content h3 {
+      html body main.project section#project-content h3 {
         margin: 0.83em 0; }
-      html body main.project section#contact-content h3, html body main.project section#contact-content p, html body main.project section#contact-content ul, html body main.project section#contact-content form, html body main.project section#contact-content ol {
+      html body main.project section#project-content h3, html body main.project section#project-content p, html body main.project section#project-content ul, html body main.project section#project-content form, html body main.project section#project-content ol {
         margin: 1.12em 0; }
-      html body main.project section#contact-content h5 {
+      html body main.project section#project-content h5 {
         margin: 1.5em 0; }
-      html body main.project section#contact-content h6 {
+      html body main.project section#project-content h6 {
         margin: 1.67em 0; }
-      html body main.project section#contact-content ol, html body main.project section#contact-content ul {
+      html body main.project section#project-content ol, html body main.project section#project-content ul {
         margin-left: 40px; }
     html body footer {
       margin-top: 40px;

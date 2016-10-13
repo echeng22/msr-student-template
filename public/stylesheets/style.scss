@@ -218,15 +218,17 @@ html {
 		/* Project page template */
 		main.project {
 
-			section#contact-content {
+			section#project-content {
 				margin-top: 20px;
 				overflow: auto;
 
 				img#project-image {
 					float: right;
+					margin-top: 25px;
 					margin-bottom: 25px;
 					margin-left: 25px;
-					width: 280px;
+					height: 280px;
+					width: auto;
 				}
 				h1#project-title {
 					margin: 0;
