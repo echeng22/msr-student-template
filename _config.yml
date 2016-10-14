@@ -2,11 +2,13 @@
 title:              MSR Portfolio
 email:              eltoncheng2017@u.northwestern.edu
 description:        "Portfolio template for students in the MSR program at Northwestern University"
-url:                "http://echeng22.github.io"
+url:                "https://echeng22.github.io"
 #baseurl:            /msr-student-template
 
 # File structure settings
 image_path:         /public/images
+
+asset_path:         /public/assets
 
 # Build settings
 markdown:           kramdown
