@@ -7,7 +7,7 @@ image:
 ---
 
 ## Overview
-##### Project was completed for ME314: Theory of Machines - Dynamics.
+### Project was completed for ME314: Theory of Machines - Dynamics.
 
 The purpose of this project was to simulate the dynamics of a swinging whip hitting a falling block using the material taught in the course. This included describing the dynamics of the system using the Euler-Lagrange equations, how impacts can affect the system, and how rotational inertia can change due to impacts.
 
