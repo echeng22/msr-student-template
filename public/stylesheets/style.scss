@@ -14,6 +14,9 @@ label, table, caption, {
 html {
 	width: 100%;
 	font-family: $font-stack;
+	.center{
+		text-align: center;
+	}
 
 	body {
 
