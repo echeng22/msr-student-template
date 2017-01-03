@@ -179,7 +179,7 @@ html {
         margin-bottom: 25px;
         margin-left: 25px;
         height: 280px;
-        width: 530px; }
+        width: auto; }
       html body main.project section#project-content h1#project-title {
         margin: 0; }
       html body main.project section#project-content h2#project-date {
