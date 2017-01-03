@@ -3,12 +3,12 @@ layout: project
 title: Collision Avoidance Simulation Tool
 date: December 20, 2016
 box: /public/assets/Voltage_vs_sarcomere_length.png
-image: /public/assets/F4.large.jpg
+image:
 ---
 
 ## Overview
 
-#####Group Project was completed for EECS 395: Compuational Geometry.
+##### Group Project was completed for EECS 395: Compuational Geometry.
 
 The goal of this project was to create a tool that would simulate collision avoidance in a system of moving robots. The algorithms and logic behind this project is based off the research paper [Generalized Reciprocal Collision Avoidance] by Daman Bareiss and Jur van den Berg.
 
