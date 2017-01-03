@@ -49,8 +49,6 @@ The video image links below shows the simulation of this system slowed down so i
 
 {: .center}
 [![Full View of Project](http://img.youtube.com/vi/Bayp_y6na8A/0.jpg)](http://www.youtube.com/watch?v=Bayp_y6na8A "Full View of Project"){:target="_blank"}
-
-{: .center}
 [![Closer View of Project](http://img.youtube.com/vi/BokumHZa_Mo/0.jpg)](http://www.youtube.com/watch?v=BokumHZa_Mo "Closer View of Project"){:target="_blank"}
 
 [link]:<https://github.com/echeng22/ME314-Final-Project>
