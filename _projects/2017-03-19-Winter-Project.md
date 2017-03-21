@@ -33,7 +33,7 @@ Below are some videos of ROS python scripts publishing out joint states that V-R
 
 <video align="center" src="/public/assets/deltarobot1.mp4" poster="http://img.youtube.com/vi/2GcU2EElAsM/0.jpg" width="600" height="400" controls preload></video>
 
-<video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="800" height="600" controls preload></video>
+<video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="600" height="400" controls preload></video>
 
 <!-- {: .center}
 [![Delta Robot Control 1](http://img.youtube.com/vi/2GcU2EElAsM/0.jpg)](https://www.youtube.com/watch?v=2GcU2EElAsM "Delta Robot Control"){:target="_blank"}
