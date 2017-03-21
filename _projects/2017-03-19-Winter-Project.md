@@ -30,11 +30,11 @@ Below are some videos of ROS python scripts publishing out joint states that V-R
 ### Status of the Project
 3/18/17: I am currently looking into adding in inverse/forward kinematics code of the delta robot, which will allow trajectory control of the robot. Also, due to how the robot is currently modelled in V-REP, inverse kinematics calculations are not easy to obtain due to all the offsets the model contains. Because of this, I am working on improving this model that will allow easier calculations, as well as making it more flexible in design parameters (length of links, radius of base, etc).
 
+<div align="center">
+    <video align="center" src="/public/assets/deltarobot1.mp4" poster="http://img.youtube.com/vi/2GcU2EElAsM/0.jpg" width="600" height="400" controls preload></video>
 
-<video align="center" src="/public/assets/deltarobot1.mp4" poster="http://img.youtube.com/vi/2GcU2EElAsM/0.jpg" width="600" height="400" controls preload></video>
-
-<video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="600" height="400" controls preload></video>
-
+    <video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="600" height="400" controls preload></video>
+</div>
 <!-- {: .center}
 [![Delta Robot Control 1](http://img.youtube.com/vi/2GcU2EElAsM/0.jpg)](https://www.youtube.com/watch?v=2GcU2EElAsM "Delta Robot Control"){:target="_blank"}
 [![Delta Robot Control 2](http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg)](https://www.youtube.com/watch?v=YjqXE8ZjUQU "Delta Robot Control"){:target="_blank"} -->
