@@ -2,7 +2,7 @@
 layout: project
 title: Simulation Tool for Decentralized Multi-Robot Cooperative Manipulation
 date: March 19, 2017
-box: /public/assets/delta_robot_v1.png
+box: /public/assets/customDelta.png
 image: /public/assets/delta_robot_v1.png
 ---
 
@@ -28,12 +28,18 @@ V-REP was used as the current platform for simulating the inverted delta robot, 
 Below are some videos of ROS python scripts publishing out joint states that V-REP subscribes to to control the robot. Source code for these scripts can be found [here].
 
 ### Status of the Project
+3/27/17: Finished creating a V-REP scene, delta_robot_create_model.ttt, that would allow for customization of the inverted delta robot. Makes it much easier for customization and for future simulations. Will now be working on improving trajectory control, using this model.
+
 3/18/17: I am currently looking into adding in inverse/forward kinematics code of the delta robot, which will allow trajectory control of the robot. Also, due to how the robot is currently modelled in V-REP, inverse kinematics calculations are not easy to obtain due to all the offsets the model contains. Because of this, I am working on improving this model that will allow easier calculations, as well as making it more flexible in design parameters (length of links, radius of base, etc).
+
+
 
 <div align="center">
     <video align="center" src="/public/assets/deltarobot1.mp4" poster="http://img.youtube.com/vi/2GcU2EElAsM/0.jpg" width="600" height="400" controls preload></video>
 
     <video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="600" height="400" controls preload></video>
+
+    <video align="center" src="/public/assets/delta_create.mp4" poster="http://img.youtube.com/vi/tMdwFdGa88U/0.jpg" width="600" height="400" controls preload></video>
 </div>
 <!-- {: .center}
 [![Delta Robot Control 1](http://img.youtube.com/vi/2GcU2EElAsM/0.jpg)](https://www.youtube.com/watch?v=2GcU2EElAsM "Delta Robot Control"){:target="_blank"}
