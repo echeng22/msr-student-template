@@ -2,8 +2,8 @@
 layout: project
 title: Simulation Tool for Decentralized Multi-Robot Cooperative Manipulation
 date: March 19, 2017
-box: /public/assets/customDelta.png
-image: /public/assets/delta_robot_v1.png
+box: /public/assets/delta_robot_v1.png
+image: /public/assets/customDelta.png
 ---
 
 ## MSR Winter Project
