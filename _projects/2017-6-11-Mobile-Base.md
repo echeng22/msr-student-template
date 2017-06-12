@@ -9,8 +9,7 @@ image: /public/assets/batterywiring.JPG
 ## MSR Final Project: Mecanum Robot
 
 Group Members:
-[Chainatee Tanakulrungson]
-[Yuchen Rao]
+[Chainatee Tanakulrungson], [Yuchen Rao]
 
 ### Overview
 In collaboration with the NxR lab, ME398 Senior Design team, and MS in Mechanical Engineering students, the goal for this portion of the project was to source and control a mobile base for a system that allows 3 or more mobile manipulators to cooperatively position a large-scale manufacturing component.
