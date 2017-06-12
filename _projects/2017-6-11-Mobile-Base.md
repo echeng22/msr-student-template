@@ -38,7 +38,6 @@ Putting together the mechanical system was straightforward, with the given sugge
 The mechanical components for each wheel are composed of the motor, chain links, two sprockets, wheel axle, and a mecanum wheel. Each wheel was oriented in a certain way, such that the the expected moving behavior of the robot is known.
 
 ![alt text][Wheel Setup]
-
 ![alt text][Mechanical System]
 
 #### Electrical System
@@ -62,6 +61,7 @@ The Kangaroo has been setup such that you can control each motor connected to it
 
 After the tuning process is complete, the control signals from the R/C receiver are connected to the control inputs to each Kangaroo. The controls are setup such that each axis of the joysticks control an individual wheel. For example, the throttle control (up-down on the left joystick) controls the back left wheel, while the rudder control (left-right on the left joystick) controls the front right wheel. The right joystick has a similar setup for the other wheels.
 
+{: .center}
 ![alt text][Controller]
 
 ####Putting Everything Together and Future Plans
