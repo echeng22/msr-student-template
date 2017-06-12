@@ -1,9 +1,9 @@
 ---
 layout: project
-title: Simulation Tool for Decentralized Multi-Robot Cooperative Manipulation
-date: March 19, 2017
-box: /public/assets/delta_robot_v1.png
-image: /public/assets/customDelta.png
+title: Mobile Base for Decentralized Multi-Robot Cooperative Manipulation
+date: June 11, 2017
+box: /public/assets/batterywiring.png
+image: /public/assets/batterywiring.png
 ---
 
 ## MSR Final Project: Mecanum Robot
@@ -84,10 +84,10 @@ Our future plans with the project over the summer and upcoming Fall quarter is t
 [Hangfa Robots]:http://www.hangfa.com/EN/robot/Navigator.html
 [Mechanical System]: /public/assets/mechanical.jpg "Putting the robot together"
 [Wheel Setup]: /public/assets/wheelsetup.jpg "Orientation of the wheels"
-[electric setup]: /public/assets/electricalschematic.jpg "General electrical system layout"
-[Motor Wiring]: /public/assets/motorwiring.jpg "Wiring of the motors"
-[Top Wiring]: /public/assets/topwiring.jpg "Wiring of the switches and converters"
-[Battery Wiring]: /public/assets/batterywiring.jpg "Wiring of the battery to the robot"
+[electric setup]: /public/assets/electricalschematic.JPG "General electrical system layout"
+[Motor Wiring]: /public/assets/motorwiring.JPG "Wiring of the motors"
+[Top Wiring]: /public/assets/topwiring.JPG "Wiring of the switches and converters"
+[Battery Wiring]: /public/assets/batterywiring.JPG "Wiring of the battery to the robot"
 [Controller]: /public/assets/controller.jpg "R/C Controller"
 
 
