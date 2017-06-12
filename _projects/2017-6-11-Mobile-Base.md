@@ -2,8 +2,8 @@
 layout: project
 title: Mobile Base for Decentralized Multi-Robot Cooperative Manipulation
 date: June 11, 2017
-box: /public/assets/batterywiring.png
-image: /public/assets/batterywiring.png
+box: /public/assets/batterywiring.JPG
+image: /public/assets/batterywiring.JPG
 ---
 
 ## MSR Final Project: Mecanum Robot
@@ -82,7 +82,7 @@ Our future plans with the project over the summer and upcoming Fall quarter is t
 [Robotnix Summit XL]:https://www.roscomponents.com/en/mobile-robots/17-summit-xl.html#/gps-no/summit_xl_docking_station-no/encoders-no/cpu-intel_baytrail_j1900_ssd_120_gb_ram_4_gb/omni_wheels-rubber_wheels/summit_xl_rgbd_zone-no/summit_xl_zone_2-no/summit_xl_zone_3-no
 [Superdroid Robots IG52 DB]:https://www.superdroidrobots.com/shop/item.aspx/programmable-mecanum-wheel-vectoring-robot-ig52-db/1788/
 [Hangfa Robots]:http://www.hangfa.com/EN/robot/Navigator.html
-[Mechanical System]: /public/assets/mechanical.jpg "Putting the robot together"
+[Mechanical System]: /public/assets/mechanical.png "Putting the robot together"
 [Wheel Setup]: /public/assets/wheelsetup.png "Orientation of the wheels"
 [electric setup]: /public/assets/electricalschematic.JPG "General electrical system layout"
 [Motor Wiring]: /public/assets/motorwiring.JPG "Wiring of the motors"
