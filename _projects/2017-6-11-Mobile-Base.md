@@ -36,6 +36,7 @@ After going through these options, we decided to purchase the Superdroid Robots 
 Putting together the mechanical system was straightforward, with the given suggestions provided in the kit manual.
 
 The mechanical components for each wheel are composed of the motor, chain links, two sprockets, wheel axle, and a mecanum wheel. Each wheel was oriented in a certain way, such that the the expected moving behavior of the robot is known.
+
 {: .center}
 ![alt text][Wheel Setup]
 ![alt text][Mechanical System]
@@ -76,19 +77,19 @@ Control of the robot using the controller is not as intuitive as with a typical 
 
 Our future plans with the project over the summer and upcoming Fall quarter is to be able to control the robot with a microcontroller, complete the setup/communication of the Linux ROS computer to the microcontroller, and begin integrating the delta robot manipulator with the mobile base.
 
-[Chainatee Tanakulrungson]: https://ctanakul.github.io/chainatee-portfolio/
-[Yuchen Rao]: https://yuchenrao.github.io/Portfolio/
-[Neobotix MPO-500]: http://www.neobotix-robots.com/mecanum-robot-mpo-500.html
+[Chainatee Tanakulrungson]:https://ctanakul.github.io/chainatee-portfolio/
+[Yuchen Rao]:https://yuchenrao.github.io/Portfolio/
+[Neobotix MPO-500]:http://www.neobotix-robots.com/mecanum-robot-mpo-500.html
 [Stanley Robotics Vector]:https://stanleyinnovation.com/robotics/vector-robotic-mobility-platform/
 [Robotnix Summit XL]:https://www.roscomponents.com/en/mobile-robots/17-summit-xl.html#/gps-no/summit_xl_docking_station-no/encoders-no/cpu-intel_baytrail_j1900_ssd_120_gb_ram_4_gb/omni_wheels-rubber_wheels/summit_xl_rgbd_zone-no/summit_xl_zone_2-no/summit_xl_zone_3-no
 [Superdroid Robots IG52 DB]:https://www.superdroidrobots.com/shop/item.aspx/programmable-mecanum-wheel-vectoring-robot-ig52-db/1788/
 [Hangfa Robots]:http://www.hangfa.com/EN/robot/Navigator.html
-[Mechanical System]: /public/assets/mechanical.png "Putting the robot together"
-[Wheel Setup]: /public/assets/wheelsetup.png "Orientation of the wheels"
-[electric setup]: /public/assets/electricalschematic.JPG "General electrical system layout"
-[Motor Wiring]: /public/assets/motorwiring.JPG "Wiring of the motors"
-[Top Wiring]: /public/assets/topwiring.JPG "Wiring of the switches and converters"
-[Battery Wiring]: /public/assets/batterywiring.JPG "Wiring of the battery to the robot"
-[Controller]: /public/assets/controller.png "R/C Controller"
+[Mechanical System]:/public/assets/mechanical.png "Putting the robot together"
+[Wheel Setup]:/public/assets/wheelsetup.png "Orientation of the wheels"
+[electric setup]:/public/assets/electricalschematic.JPG "General electrical system layout"
+[Motor Wiring]:/public/assets/motorwiring.JPG "Wiring of the motors"
+[Top Wiring]:/public/assets/topwiring.JPG "Wiring of the switches and converters"
+[Battery Wiring]:/public/assets/batterywiring.JPG "Wiring of the battery to the robot"
+[Controller]:/public/assets/controller.png "R/C Controller"
 
 
