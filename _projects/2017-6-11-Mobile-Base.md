@@ -9,8 +9,8 @@ image: /public/assets/batterywiring.JPG
 ## MSR Final Project: Mecanum Robot
 
 Group Members:
-Chainatee Tanakulrungson
-Yuchen Rao
+[Chainatee Tanakulrungson]
+[Yuchen Rao]
 
 ### Overview
 In collaboration with the NxR lab, ME398 Senior Design team, and MS in Mechanical Engineering students, the goal for this portion of the project was to source and control a mobile base for a system that allows 3 or more mobile manipulators to cooperatively position a large-scale manufacturing component.
@@ -27,7 +27,7 @@ We needed to decide whether to purchase a pre-built base or a DIY kit which we c
 6. Ideally has encoders on each motor, to allow for velocity control and for calculating the robot’s position in the world
 7. Ideally less than $15,000.
 
-Options that we were looking at include: the Neobotix MPO-500,  Stanley Robotics Vector platform, Robotnix Summit XL, Superdroid Robots IG52 DB and Hangfa Robots Compass Q2 and Navigator Q2.
+Options that we were looking at include: the [Neobotix MPO-500],  [Stanley Robotics Vector] platform, [Robotnix Summit XL], [Superdroid Robots IG52 DB] and [Hangfa Robots] Compass Q2 and Navigator Q2.
 
 After going through these options, we decided to purchase the Superdroid Robots IG52 DB model as the kit we picked out met all the requirements except for #5. Due to the lower price tag of this kit (<$3000) and the ability to customize it to our needs, we believed that we can add our own ROS compatible Linux computer that will still keep the kit well below our budget.
 
