@@ -18,8 +18,6 @@ The design requirements for this project require the large component to be manip
 
 As a result of this, the robot consists of 4 major components: a mobile base, an active xyz platform that will allow movement in the xyz plane, a passive inverted delta robot that allows for compliance in the xyz plane, and a gimbal that allows for the robot to detect the orientation of the large object. The current status of this project is the development of the passive inverted delta robot and is the current focus for this simulation tool.
 
-
-
 Multiple iterations for the design of this robot were discussed throughout the quarter. The model presented in this project is the current model. Scenes of the previous and current models can be found at this [link].
 
 ### Control of the Robot
@@ -32,21 +30,21 @@ Below are some videos of ROS python scripts publishing out joint states that V-R
 
 3/18/17: I am currently looking into adding in inverse/forward kinematics code of the delta robot, which will allow trajectory control of the robot. Also, due to how the robot is currently modelled in V-REP, inverse kinematics calculations are not easy to obtain due to all the offsets the model contains. Because of this, I am working on improving this model that will allow easier calculations, as well as making it more flexible in design parameters (length of links, radius of base, etc).
 
+6/11/17: Control of the simulation works. I am able to have the end effector move in a desired trajectory (video shown below), as well as take in input from a PS3 controller. With this set up, I now have a structure of code that I can use to port over to the physical hardware when the time comes.
 
+{: .center}
+[![Delta Robot Control](http://img.youtube.com/vi/GhsyXsqIfv0/0.jpg)](https://www.youtube.com/watch?v=GhsyXsqIfv0 "Delta Robot Control"){:target="_blank"}
 
 <div align="center">
+
     <video align="center" src="/public/assets/deltarobot1.mp4" poster="http://img.youtube.com/vi/2GcU2EElAsM/0.jpg" width="600" height="400" controls preload></video>
 
     <video align="center" src="/public/assets/deltarobot2.mp4" poster="http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg" width="600" height="400" controls preload></video>
 
     <video align="center" src="/public/assets/delta_create.mp4" poster="http://img.youtube.com/vi/tMdwFdGa88U/0.jpg" width="600" height="400" controls preload></video>
-</div>
-<!-- {: .center}
-[![Delta Robot Control 1](http://img.youtube.com/vi/2GcU2EElAsM/0.jpg)](https://www.youtube.com/watch?v=2GcU2EElAsM "Delta Robot Control"){:target="_blank"}
-[![Delta Robot Control 2](http://img.youtube.com/vi/YjqXE8ZjUQU/0.jpg)](https://www.youtube.com/watch?v=YjqXE8ZjUQU "Delta Robot Control"){:target="_blank"} -->
 
+
+</div>
 
 [here]:https://github.com/echeng22/winterProjectROS
 [link]:https://github.com/echeng22/bbot
-
-
