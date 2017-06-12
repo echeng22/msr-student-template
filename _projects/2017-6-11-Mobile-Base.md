@@ -83,11 +83,11 @@ Our future plans with the project over the summer and upcoming Fall quarter is t
 [Superdroid Robots IG52 DB]:https://www.superdroidrobots.com/shop/item.aspx/programmable-mecanum-wheel-vectoring-robot-ig52-db/1788/
 [Hangfa Robots]:http://www.hangfa.com/EN/robot/Navigator.html
 [Mechanical System]: /public/assets/mechanical.jpg "Putting the robot together"
-[Wheel Setup]: /public/assets/wheelsetup.jpg "Orientation of the wheels"
+[Wheel Setup]: /public/assets/wheelsetup.png "Orientation of the wheels"
 [electric setup]: /public/assets/electricalschematic.JPG "General electrical system layout"
 [Motor Wiring]: /public/assets/motorwiring.JPG "Wiring of the motors"
 [Top Wiring]: /public/assets/topwiring.JPG "Wiring of the switches and converters"
 [Battery Wiring]: /public/assets/batterywiring.JPG "Wiring of the battery to the robot"
-[Controller]: /public/assets/controller.jpg "R/C Controller"
+[Controller]: /public/assets/controller.png "R/C Controller"
 
 
