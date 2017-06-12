@@ -36,7 +36,7 @@ After going through these options, we decided to purchase the Superdroid Robots 
 Putting together the mechanical system was straightforward, with the given suggestions provided in the kit manual.
 
 The mechanical components for each wheel are composed of the motor, chain links, two sprockets, wheel axle, and a mecanum wheel. Each wheel was oriented in a certain way, such that the the expected moving behavior of the robot is known.
-
+{: .center}
 ![alt text][Wheel Setup]
 ![alt text][Mechanical System]
 
@@ -49,6 +49,7 @@ The 24 V power feeds into the motor controller, which connects to two motors and
 
 Below is the general electrical schematic used to wire the robot and the actual physical setup of the wiring.
 
+{: .center}
 ![alt text][Electric Setup]
 ![alt text][Motor Wiring]
 ![alt text][Top Wiring]
