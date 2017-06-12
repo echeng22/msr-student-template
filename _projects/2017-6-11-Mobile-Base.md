@@ -56,7 +56,7 @@ Below is the general electrical schematic used to wire the robot and the actual 
 ![alt text][Battery Wiring]
 
 #### Tuning the System and Setting up for RC Control
-The Kangaroo has a feature that auto-tunes the control of the wheels. The tuning procedure is to put the Kangaroo in "Teach Tuning" mode and begin rotating both motors at the same time. After rotating the moters in the direction the motors will move in, pushing a button the Kangaroo will begin the auto-tuning process.
+The Kangaroo has a feature that auto-tunes the control of the wheels. The tuning procedure is to put the Kangaroo in "Teach Tuning" mode and begin rotating both motors at the same time. After rotating the moters in the direction the motors will move in, pushing a button on the Kangaroo will begin the auto-tuning process.
 
 The Kangaroo has been setup such that you can control each motor connected to it individually, and is in velocity control mode.
 
